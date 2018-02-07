@@ -1,0 +1,11 @@
+.auth-logo {
+    height: 50px;
+    width: 50px;
+}
+.auth-form-wrapper{
+    padding: 30px;
+    border-radius: 3px;
+}
+.login-parent{
+    position: relative;
+}
