@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
+body{
+    background-color: #864642;
+    font-family: 'Montserrat', sans-serif;
+}
 .auth-logo {
-    height: 50px;
-    width: 50px;
+    width: 35%;
+    margin: 0 auto;
 }
 .auth-form-wrapper{
     padding: 30px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 .login-parent{
     position: relative;
+}
+.bottom-text p, .bottom-text p a{
+    color: #edd0cb !important;
 }

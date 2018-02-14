@@ -1,0 +1,35 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    min-height: calc(100vh - 56px);
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+.outstanding-revenue{
+    background:url('../images/oustanding revenue.png') no-repeat;
+    background-size: 100% 100%;
+}
+.total-profit{
+    background:url('../images/graph placeholder.png') no-repeat;
+    background-size: 100% 100%;
+}
+.menu-close{
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+    top: 0;
+    right: 0;
+    border: none;
+}
+.menu-icon{
+    font-size: 25px;
+    margin: auto 10px !important;
+    color: #361c1b;
+}
+.hamburger-menu > span{
+    color: #FFC36E !important;
+}

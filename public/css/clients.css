@@ -1,0 +1,20 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.outstanding-revenue{
+    background:url('../images/oustanding revenue.png') no-repeat;
+    background-size: 100% 100%;
+}
+.total-profit{
+    background:url('../images/graph placeholder.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.form-group{
+    margin-bottom: 4px;
+}
+

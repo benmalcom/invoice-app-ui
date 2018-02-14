@@ -1,0 +1,137 @@
+.row-offcanvas{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/*.user-avatar-area{
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-align-items: center !important;
+    align-items: center !important; !* align vertical *!
+}
+.navbar{
+    background-color: #fff !important;
+}
+.sidebar-offcanvas {
+    position: static !important;
+}*/
+
+
+/*
+  ##Device = Most of the Smart phones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px){
+    body{
+        background-color: #fff !important;
+    }
+    .content{
+        padding: 30px 30px !important;
+    }
+    .nav-right a{
+        display: inline-block;
+    }
+    .login-parent{
+        margin-top: 50px !important;
+    }
+    .navbar > .navbar-collapse > .navbar-nav > li.nav-item{
+        display: inline !important;
+        float: left !important;
+        color: yellow !important;
+    }
+
+    html, body{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    body {
+        background-color: #F7F7F7 !important;
+    }
+    .home-menu, .plus-menu{
+        color: #E8C6C0 !important;
+    }
+    .hamburger-menu{
+        color: #FFD782 !important;
+    }
+    .navbar{
+        background-color: #9B5A50 !important;
+    }
+    .pp-border{
+        border: 3px solid #9E665E !important;
+    }
+    .content-left-on-minimize{
+        text-align: left !important;
+    }
+    .sidebar .view-profile{
+        color: #C98A80 !important;
+    }
+    .content-parent{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .row-offcanvas {
+        position: relative;
+        left: 0;
+    }
+    .row-offcanvas .sidebar-offcanvas {
+        left: -75%; /* 6 columns */
+        background-color: #854643 !important;
+        position: absolute !important;
+        top: 0 !important;
+        width: 75% !important;
+        height: 100vh !important;
+        box-shadow: 0 0 6px #000;
+        margin-bottom: 0 !important;
+    }
+    .row-offcanvas.active {
+        left: 75%; /* 6 columns */
+    }
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .content{
+        padding: 30px 30px !important;
+    }
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .content{
+        padding: 30px 30px !important;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+
+}

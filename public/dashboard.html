@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/global.css" media="screen">
+    <link rel="stylesheet" href="css/dashboard.css" media="screen">
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-md-3 col-lg-2 sidebar sidebar-offcanvas p-0 m-0">
+            <!--<button type="button" class="m-1 d-block d-sm-none menu-close" data-toggle="offcanvas">
+                <i class="fa fa-times"></i>
+            </button>-->
+            <div class="user-avatar-area center-content">
+                <div>
+                    <img src="images/user%20avatar.png" class="circle circle-md pp-border shadow">
+                    <h6 class="text-sm mt-10 user-name text-center">Benjamin Ikeji</h6>
+                    <h6 class="text-center text-sm"><a href="#" class="view-profile">VIEW PROFILE</a></h6>
+                </div>
+            </div>
+            <div class="user-links-area">
+                <ul class="mt-15 p-0">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="invoices.html">Invoices</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-10 content-parent p-0">
+           <nav class="navbar bg-white shadow">
+               <a class="navbar-brand d-none d-sm-block" href="#">
+                   <img src="images/logo.png" class="logo-main">
+               </a>
+
+<!--                <button class="navbar-toggler text-black" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>-->
+
+               <div class="btn-group dropdown align-items-center justify-content-between">
+                   <a class="d-inline d-sm-none hamburger-menu home-menu" data-toggle="offcanvas">
+                       <span class="fa fa-bars menu-icon"></span>
+                   </a>
+                   <a class="d-inline d-md-none text-muted home-menu" href="#">
+                       <i class="fa fa-home menu-icon"></i>
+                   </a>
+                   <a class="d-inline d-md-none text-muted home-menu" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <i class="fa fa-plus menu-icon"></i>
+                   </a>
+                   <div class="dropdown-menu bg-white mt-10 shadow-lite" aria-labelledby="dropdownMenuLink">
+                       <a class="dropdown-item" href="#">New Invoice</a>
+                       <a class="dropdown-item" href="#">New Client</a>
+                       <a class="dropdown-item" href="#">Invite</a>
+                   </div>
+               </div>
+               <a>
+                   <img src="images/user%20avatar.png" class="circle circle-xs pp-border shadow d-block d-sm-none">
+               </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                </div>
+            </nav>
+            <div class="content p-20">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12">
+                        <h2 class="text-muted">Dashboard</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12 text-right content-left-on-minimize d-none d-sm-block">
+                        <a class="btn btn-outline-secondary ml-auto text-sm">INVITE</a>
+                        <a class="btn btn-custom-app text-sm">CREATE</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6 class="text-muted">Outstanding Revenue</h6>
+                        <div class="outstanding-revenue h-130 bg-white b-r-custom">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-30">
+                    <div class="col-md-12">
+                        <h6 class="text-muted">Total Profit</h6>
+                        <div class="total-profit h-400 bg-white b-r-custom">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/popper.js/dist/umd/popper.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('[data-toggle=offcanvas]').click(function () {
+			$('.row-offcanvas').toggleClass('active');
+		});
+		$('.row-offcanvas > .sidebar-offcanvas > ul  a').click(function () {
+			$('.row-offcanvas').toggleClass('active');
+		});
+	});
+/*
+	$(document).ready(function () {
+		$('[data-toggle=offcanvas]').click(function () {
+			if ($('.sidebar-offcanvas').css('background-color') == 'rgb(255, 255, 255)') {
+				$('.list-group-item').attr('tabindex', '-1');
+			} else {
+				$('.list-group-item').attr('tabindex', '');
+			}
+			$('.row-offcanvas').toggleClass('active');
+
+		});
+	});
+*/
+
+</script>
+</body>
+</html>

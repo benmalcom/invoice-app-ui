@@ -1,33 +1,174 @@
 @import 'util.css';
 @import '../lib/bootstrap/dist/css/bootstrap.min.css';
+@import 'responsive.css';
 @import '../lib/font-awesome/css/font-awesome.min.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
     background-color: #f7f7f7;
+}
+h1{
+    width: 101px;
+    height: 38px;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.33;
+}
+h2{
+    font-family: Montserrat sans-serif !important;
+    font-size: 25px;
+    line-height: 1.2;
+}
+h3{
+    font-size: 23.5px;
+    line-height: 1.17;
+}
+h4{
+
+}
+h5{
+
+}
+h6{
+
+}
+p{
+    font-size: 20px;
+    line-height: 2.0;
+}
+
+th{
+
+    font-size: 10px;
+    line-height: 1.23;
+    text-align: left;
+}
+td{
+    font-size: 12px;
+    line-height: 1.21;
+    text-align: left;
+
+}
+
+.logo-main{
+    width: 60%;
+    height: 100%;
+}
+.sidebar {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: #864642;
+    margin: 0 !important;
+}
+.user-avatar-area {
+    height: 45%;
+    background-color: #9A5A52;
+    text-align: center;
+}
+
+.user-name{
+    font-weight: 600;
+    color: #333;
+}
+.user-avatar-area > div > .view-profile {
+    font-size: 10px !important;
+    text-align: center;
+}
+.user-links-area ul {
+    list-style: none;
+    font-size: 12px;
+}
+
+.user-links-area > ul > li {
+    border-bottom: 2px solid #90504B;
+    padding: 15px;
+    padding-left: 35px;
+    display: block;
+}
+.user-links-area > ul > li.active, .user-links-area > ul > li:hover{
+    display: block;
+    background-color: #894A45;
+}
+.user-links-area > ul > li:last-of-type {
+    border-bottom: none;
+}
+.user-links-area > ul > li > a{
+    color: #fff;
+}
+.pp-border {
+    border: 10px solid #9E665E;
+}
+.user-name{
+    font-weight: 600 !important;
+    color: #fff;
+}
+.view-profile{
+    font-weight: 600 !important;
+    font-size: 10px;
+    line-height: 1.43;
+    text-align: center;
+    color: #dc9d90;
+}
+.navbar > .navbar-collapse > .navbar-nav > li > a, .navbar > .navbar-nav * {
+    color: #333 !important;
+    font-size: 11px;
+}
+
+.navbar > .navbar-collapse > .navbar-nav > li.active > a,
+.navbar > .navbar-collapse > .nav-right a.active {
+    font-weight: 900 !important;
+    color: #854643 !important;
+}
+
+.navbar-toggler {
+    color: #854643 !important;
+}
+.content-parent{
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.content {
+    min-height: calc(100vh - 56px);
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
 }
 
 .break-word{
     overflow-wrap: break-word;
 }
-
-
-@media only screen and (min-width: 320px) and (max-width: 479px){
-    body{
-        background-color: #fff !important;
-    }
-    .nav-right a{
-        display: inline-block;
-    }
-    .login-parent{
-        margin-top: 50px !important;
-    }
-    .navbar > .navbar-collapse > .navbar-nav > li.nav-item{
-        display: inline !important;
-        float: left !important;
-        color: yellow !important;
-    }
+.content{
+    padding: 30px 70px;
 }
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
-@media (min-width: 768px) {
+.content {
+    min-height: calc(100vh - 56px);
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+
+
+.content-title{
+    font-size: 35px;
+    font-weight: 400 !important;
+}
+.menu-close{
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+    top: 0;
+    right: 0;
+    border: none;
+}
+.menu-icon{
+    font-size: 25px;
+    margin: auto 10px !important;
+    color: #361c1b;
+}
+.hamburger-menu > span{
+    color: #FFC36E !important;
+}
+.input-custom{
+    height: 40px;
 }
