@@ -287,7 +287,9 @@ a{
 .pt-0 {
     padding-top: 0 !important;
 }
-
+.pl-50 {
+    padding-left: 50px !important;
+}
 .pl-30 {
     padding-left: 30px !important;
 }
@@ -311,7 +313,9 @@ a{
 .pl-0 {
     padding-left: 0px !important;
 }
-
+.pr-50 {
+    padding-right: 50px !important;
+}
 .pr-30 {
     padding-right: 30px !important;
 }
@@ -447,12 +451,12 @@ Background colors*/
 .inline-block{display: inline-block !important;}
 .block{display: block;}
 
-.text-custom{color: #c43341 !important;}
-.text-custom2{color: #00a99d !important;}
-.text-active{color: #c43341 !important;}
-
-.text-bold {
-    font-weight: bolder;
+.text-custom{color: #6a2a25 !important;}
+.text-bold{
+    font-weight: bold !important;
+}
+.text-bolder {
+    font-weight: bolder !important;
 }
 .text-cyan {
     color: #22beef;
@@ -557,6 +561,10 @@ Background colors*/
 
 .text-white {
     color: white !important;
+}
+
+.text-xxs {
+    font-size: 9px !important;
 }
 
 .text-xs {
@@ -719,6 +727,7 @@ Background colors*/
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
+    font-size: 12px !important;
 }
 .btn-custom.btn-nav{padding: 6px 18px;}
 .btn-custom:hover,.btn-custom:active,
@@ -732,7 +741,7 @@ Background colors*/
     -moz-box-shadow: none !important;
     box-shadow: none !important;
     background-color: #FAFAFA !important;
-    padding-top: 11px !important;
+    padding-top: 10px !important;
     padding-bottom: 10px !important;
 }
 .input-custom.white{

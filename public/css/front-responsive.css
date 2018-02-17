@@ -1,0 +1,102 @@
+/*
+  ##Device = Most of the Smart phones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px){
+    body{
+        padding-top: 55px !important;
+    }
+    .banner{
+        padding-bottom: 30px !important;
+    }
+    .business-setup-home{
+        margin-top: -20px !important;
+    }
+    .navbar{
+        box-shadow: 0 0 1px #000;
+    }
+    .content-left-on-minimize{
+        text-align: left !important;
+    }
+    .home-hero-parent{
+        display: none;
+    }
+    .home-writings{
+        margin-left: auto !important;
+        padding: 20px;
+    }
+    .home-writings form{
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+    .navbar-brand img{
+        width: 120px !important;
+        display: inline;
+        text-align: left !important;
+    }
+    .nav-right{
+        margin-left: 0 !important;
+    }
+    .business-setup-item{
+        margin-bottom: 30px;
+    }
+    .incentives-container > .incentives > p{
+        margin-bottom: 0 !important;
+    }
+    footer{
+        padding: 30px;
+    }
+    .footer-logo-parent{
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        text-align: left !important;
+    }
+    .block-on-minimize{
+        display: block !important;
+    }
+    .extra-text{
+        text-align: center !important;
+        font-size: 11px !important;
+    }
+    .extra-btn{
+        margin-top: 7px !important;
+    }
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+
+}

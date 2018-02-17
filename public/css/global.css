@@ -8,6 +8,12 @@ body{
     font-family: 'Open Sans', sans-serif !important;
     background-color: #f7f7f7;
 }
+.open-sans{
+    font-family: 'Open Sans', sans-serif !important;
+}
+.montserrat{
+    font-family: Montserrat, sans-serif !important;
+}
 h1{
     width: 101px;
     height: 38px;
@@ -39,7 +45,6 @@ p{
 }
 
 th{
-
     font-size: 10px;
     line-height: 1.23;
     text-align: left;
@@ -50,7 +55,9 @@ td{
     text-align: left;
 
 }
-
+ul{
+    list-style: none;
+}
 .logo-main{
     width: 60%;
     height: 100%;
@@ -111,14 +118,13 @@ td{
     text-align: center;
     color: #dc9d90;
 }
-.navbar > .navbar-collapse > .navbar-nav > li > a, .navbar > .navbar-nav * {
+.navbar > .navbar-collapse > .navbar-nav > li > a, .navbar > .navbar-collapse > .navbar-nav * {
     color: #333 !important;
-    font-size: 11px;
+    font-size: 13px !important;
 }
 
 .navbar > .navbar-collapse > .navbar-nav > li.active > a,
 .navbar > .navbar-collapse > .nav-right a.active {
-    font-weight: 900 !important;
     color: #854643 !important;
 }
 
@@ -147,8 +153,6 @@ td{
     max-height: calc(100vh - 56px);
     overflow-y: auto;
 }
-
-
 .content-title{
     font-size: 35px;
     font-weight: 400 !important;
