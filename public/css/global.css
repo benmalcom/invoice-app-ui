@@ -176,3 +176,28 @@ ul{
 .input-custom{
     height: 40px;
 }
+
+.color-box{
+    height: 100%;
+    width: 40px;
+    border-radius: 4px;
+    margin: 2px;
+}
+.color-box.first{
+    background-color: #249ADD !important;
+}
+.color-box.second{
+    background-color: #24D7BE !important;
+}
+.color-box.third{
+    background-color: #F59131 !important;
+}
+.color-box.fourth{
+    background-color: #5D40C6 !important;
+}
+.color-box.fifth{
+    background-color: #EB302E !important;
+}
+.color-box.sixth{
+    background-color: #9A5A52 !important;
+}

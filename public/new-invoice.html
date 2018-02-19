@@ -1,10 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/global.css" media="screen">
+    <link rel="stylesheet" href="css/new-invoice.css" media="screen">
+    <title>New Clients</title>
 </head>
 <body>
+<div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-md-3 col-lg-2 sidebar sidebar-offcanvas p-0 m-0">
+            <!--<button type="button" class="m-1 d-block d-sm-none menu-close" data-toggle="offcanvas">
+                <i class="fa fa-times"></i>
+            </button>-->
+            <div class="user-avatar-area center-content">
+                <div>
+                    <img src="images/user%20avatar.png" class="circle circle-md pp-border shadow">
+                    <h6 class="text-sm mt-10 user-name text-center">Benjamin Ikeji</h6>
+                    <h6 class="text-center text-sm"><a href="#" class="view-profile">VIEW PROFILE</a></h6>
+                </div>
+            </div>
+            <div class="user-links-area">
+                <ul class="mt-15 p-0">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="invoices.html">Invoices</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-10 content-parent p-0">
+            <nav class="navbar bg-white shadow">
+                <a class="navbar-brand d-none d-sm-block" href="#">
+                    <img src="images/logo.png" class="logo-main">
+                </a>
+                <div class="btn-group dropdown align-items-center justify-content-between">
+                    <a class="d-inline d-sm-none hamburger-menu home-menu" data-toggle="offcanvas">
+                        <span class="fa fa-bars menu-icon"></span>
+                    </a>
+                    <a class="d-inline d-md-none text-muted home-menu" href="#">
+                        <i class="fa fa-home menu-icon"></i>
+                    </a>
+                    <a class="d-inline d-md-none text-muted home-menu" href="#" role="button" id="dropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-plus menu-icon"></i>
+                    </a>
+                    <div class="dropdown-menu bg-white mt-10 shadow-lite" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">New Invoice</a>
+                        <a class="dropdown-item" href="#">New Client</a>
+                        <a class="dropdown-item" href="#">Invite</a>
+                    </div>
+                </div>
+                <a>
+                    <img src="images/user%20avatar.png" class="circle circle-xs pp-border shadow d-block d-sm-none">
+                </a>
 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                </div>
+            </nav>
+            <div class="content mt-0">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12">
+                        <h2 class="content-title">
+                            New Invoice
+                        </h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12 text-right content-left-on-minimize">
+                        <a class="text-sm m-1 content-left-on-minimize">CANCEL</a>
+                        <button class="btn btn-custom-app m-1 content-left-on-minimize">SAVE</button>
+                        <button class="btn btn-custom-app m-1 content-left-on-minimize">SEND</button>
+                    </div>
+                </div>
+                <hr class="mt-1">
+                <div class="row mt-30">
+                    <div class="col-md-9">
+                        <div class="invoice">
+                            <div class="invoice-inner">
+                                <div class="first-child container-fluid">
+                                    <div class="row full-height">
+                                        <div class="col-md-4 logo-container center-content">
+                                            <div>
+                                                <h6 class="text-muted">Drag your logo here</h6>
+                                                <h6 class="text-muted">or <a href="#">select a file</a></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 p-0 text-bold sender-address">
+                                            <h6 class="text-sm text-right">hello@ekaruztech.com</h6>
+                                            <h6 class="text-sm text-right">09033666366</h6>
+                                        </div>
+                                        <div class="col-md-4 text-right p-0 text-bold receiver-address">
+                                            <h6 class="text-sm">15 Oyedele, off Liasu Road</h6>
+                                            <h6 class="text-sm">Idimu, Lagos</h6>
+                                            <h6 class="text-sm text-muted">Zip code</h6>
+                                            <h6 class="text-sm">Nigeria</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="second-child container-fluid mt-40">
+                                    <div class="row">
+                                        <div class="col-md-3 pr-10 p-0">
+                                            <h6 class="text-sm invoice-header-color">Billed To</h6>
+                                            <div class="center-content add-client-placeholder">
+                                                <a href="#" class="text-muted">+ Add a Client</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 p-0">
+                                            <div>
+                                                <h6 class="text-sm invoice-header-color mb-1">Date of Issue</h6>
+                                                <h6 class="text-sm">02/04/2018 <i class="fa fa-calendar"></i></h6>
+                                            </div>
+                                            <div>
+                                                <h6 class="text-sm invoice-header-color mb-1">Due Date</h6>
+                                                <h6 class="text-sm">03/06/2018 <i class="fa fa-calendar"></i></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 p-0">
+                                            <h6 class="text-sm invoice-header-color mb-1">Invoice Number</h6>
+                                            <h6 class="text-sm">000001</h6>
+                                        </div>
+                                        <div class="col-md-3 p-0 text-right">
+                                            <h6 class="text-sm invoice-header-color">Amount Due(NGN)</h6>
+                                            <h3>N0.00</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div>
+                                    <hr class="mt-60 invoice-divider">
+                                </div>
+                                <div class="third-child container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12 p-0">
+                                            <table class="table table-borderless table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th class="invoice-header-color">Description</th>
+                                                    <th class="invoice-header-color">Rate</th>
+                                                    <th class="invoice-header-color">Quantity</th>
+                                                    <th class="invoice-header-color">Item Total</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>My favourite new item here</td>
+                                                    <td>50</td>
+                                                    <td>23</td>
+                                                    <td>2333</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <div>
+                                                <button class="btn btn-block btn-add-item text-center"> +Add an Item</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fourth-child container-fluid">
+                                <div>
+                                    <h6 class="invoice-header-color text-sm">Notes</h6>
+                                    <h6 class="text-muted text-xs">Enter Notes or bank transfer details(optional)</h6>
+                                </div>
+                                <div class="mt-10">
+                                    <h6 class="invoice-header-color text-sm">Terms</h6>
+                                    <h6 class="text-muted text-xs">Enter Terms or conditions(optional)</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mt-2 mb-3">
+                            <div class="settings">
+                                <h6 class="mb-0">Settings</h6>
+                                <p>
+                                    <small>FOR THIS INVOICE</small>
+                                </p>
+                                <hr>
+                                <h6 class="mb-0">Customize Invoice Style <i
+                                        class="fa fa-chevron-right ml-2"></i></h6>
+                                <p>
+                                    <small>Change template, color and font</small>
+                                </p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="lib/jquery/dist/jquery.min.js"></script>
+        <script src="lib/popper.js/dist/umd/popper.min.js"></script>
+        <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>
+			$(document).ready(function () {
+				$('[data-toggle=offcanvas]').click(function () {
+					$('.row-offcanvas').toggleClass('active');
+				});
+				$('.row-offcanvas > .sidebar-offcanvas > ul  a').click(function () {
+					$('.row-offcanvas').toggleClass('active');
+				});
+			});
+        </script>
 </body>
 </html>

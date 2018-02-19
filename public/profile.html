@@ -6,94 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/global.css" media="screen">
     <link rel="stylesheet" href="css/profile.css" media="screen">
-    <title>Profile</title>
+    <title>Your Profile</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-white shadow-lite fixed-top navbar-custom2">
-    <a class="navbar-brand" href="#">
-        <img src="images/coiner-logo.png" class="logo-main">
-    </a>
-    <button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa fa-bars"></span>
-    </button>
-
-
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-
-        <ul class="navbar-nav mr-20">
-            <li class="nav-item active">
-                <a class="nav-link nav-anchor" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-anchor" href="#">Buy/Sell</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-anchor" href="#">Charts</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-anchor" href="#">Dashboard</a>
-            </li>
-        </ul>
-        <div class="navbar-nav nav-right authenticated-nav-right">
-            <img src="images/pp.png" class="circle circle-xs pp-border">
-        </div>
-
-    </div>
-</nav>
-
-<div class="col-md-10 mx-auto authenticated-user-area shadow-lite mt-50">
-    <div class="row row-offcanvas full-height">
-        <div class="col-md-3 sidebar sidebar-offcanvas shadow-lite authenticated-sidebar">
+<div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-md-3 col-lg-2 sidebar sidebar-offcanvas p-0 m-0">
+            <!--<button type="button" class="m-1 d-block d-sm-none menu-close" data-toggle="offcanvas">
+                <i class="fa fa-times"></i>
+            </button>-->
             <div class="user-avatar-area center-content">
                 <div>
-                    <img src="images/pp.png" class="circle circle-sm pp-border">
-                    <h6 class="text-sm mt-10 user-name">Benjamin Ikeji</h6>
-                    <h6 class="text-sm text-muted view-profile"><a class="text-muted" href="profile.html">VIEW PROFILE</a></h6>
+                    <img src="images/user%20avatar.png" class="circle circle-md pp-border shadow">
+                    <h6 class="text-sm mt-10 user-name text-center">Benjamin Ikeji</h6>
+                    <h6 class="text-center text-sm"><a href="#" class="view-profile">VIEW PROFILE</a></h6>
                 </div>
             </div>
-            <hr class="m-0">
             <div class="user-links-area">
-                <p class="d-block d-sm-none">
-                    <button type="button" class="btn btn-outline-secondary btn-xs text-sm m-1" data-toggle="offcanvas">
-                        <i class="fa fa-times text-danger"></i> Close
-                    </button>
-                </p>
-                <ul class="mt-15">
-                    <li><a class="text-muted" href="dashboard.html">DASHBOARD</a></li>
-                    <li><a class="text-muted" href="transactions.html">TRANSACTIONS</a></li>
-                    <li><a class="text-muted" href="transfer.html">TRANSFER</a></li>
-                    <li><a class="text-muted" href="wallet.html">WALLET</a></li>
-                    <li><a class="text-muted" href="settings.html">SETTINGS</a></li>
-                    <li><a class="text-muted" href="#">LOGOUT</a></li>
+                <ul class="mt-15 p-0">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="invoices.html">Invoices</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
                 </ul>
             </div>
         </div>
-        <div class="col-md-9 p-0 content shadow-lite">
-            <p class="mt-10 d-block d-sm-none">
-                <button type="button" class="btn btn-outline-secondary btn-sm m-1" data-toggle="offcanvas">
-                    Menu
-                </button>
-            </p>
-            <header class="first-inner-header p-15 pr-25 shadow-lite d-flex justify-content-around">
-                <span><strong>Profile</strong></span>
-                <span class="text-sm text-muted ml-auto">Home - Profile</span>
-            </header>
-            <div class="container-fluid content-area align-content-between">
-                <div class="row">
-                    <div class="col-md-6">
+        <div class="col-md-9 col-lg-10 content-parent p-0">
+            <nav class="navbar bg-white shadow">
+                <a class="navbar-brand d-none d-sm-block" href="#">
+                    <img src="images/logo.png" class="logo-main">
+                </a>
+                <div class="btn-group dropdown align-items-center justify-content-between">
+                    <a class="d-inline d-sm-none hamburger-menu home-menu" data-toggle="offcanvas">
+                        <span class="fa fa-bars menu-icon"></span>
+                    </a>
+                    <a class="d-inline d-md-none text-muted home-menu" href="#">
+                        <i class="fa fa-home menu-icon"></i>
+                    </a>
+                    <a class="d-inline d-md-none text-muted home-menu" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-plus menu-icon"></i>
+                    </a>
+                    <div class="dropdown-menu bg-white mt-10 shadow-lite" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">New Invoice</a>
+                        <a class="dropdown-item" href="#">New Client</a>
+                        <a class="dropdown-item" href="#">Invite</a>
+                    </div>
+                </div>
+                <a>
+                    <img src="images/user%20avatar.png" class="circle circle-xs pp-border shadow d-block d-sm-none">
+                </a>
 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                </div>
+            </nav>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12">
+                        <h3 class="content-title">
+                            Profile
+                        </h3>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12 text-right content-left-on-minimize">
+                        <a class="text-sm m-1 content-left-on-minimize">CANCEL</a>
+                        <button class="btn btn-custom-app m-1 content-left-on-minimize">SAVE</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-40">
+                    <div class="col-md-12 p-0 mb-10">
+                        <div class="col-md-2">
+                            <div>
+                                <img src="images/user%20avatar.png" class="circle circle-sm shadow">
+                                <h6><a href="#" class="text-sm">Update photo</a></h6>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="text-uppercase text-sm">First Name</label>
-                            <input type="text" class="form-control" placeholder="Update your first name">
-                        </div>
-                        <div class="form-group">
-                            <label class="text-uppercase text-sm">Last Name</label>
-                            <input type="text" class="form-control" placeholder="Update your last name">
-                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label class="text-muted text-xs">NAME</label>
+                                    <div class="row">
+                                        <div class="col-md-6 col-12 mb-10">
+                                            <input type="text" class="form-control form-control-lg simplebox text-sm input-custom white text-muted" aria-describedby="emailHelp" placeholder="First Name">
+                                        </div>
+                                        <div class="col-md-6 col-12 mb-10">
+                                            <input type="text" class="form-control form-control-lg simplebox text-sm input-custom white text-muted" aria-describedby="emailHelp" placeholder="First Name">
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-muted text-xs">EMAIL ADDRESS</label>
+                                <input type="email" class="form-control form-control-lg simplebox text-sm input-custom white text-muted" placeholder="you@eaxample.com">
+                                <small class="form-text text-muted text-sm"><a href="#">Change email address</a></small>
 
+                            </div>
+                            <div class="form-group mt-10">
+                                <label class="text-muted text-xs">PASSWORD</label>
+                                <input type="password" class="form-control form-control-lg simplebox text-sm input-custom white text-muted" placeholder="password">
+                                <small class="form-text text-muted text-sm"><a href="#">Change password</a></small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-3 ml-20 pl-0 settings">
+                            <ul class="profile-links bg-transparent text-muted full-width">
+                                <li>
+                                    <a href="#">
+                                    <span>My Team</span>
+                                    <span class="fa fa-chevron-right"></span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <span>My Profile</span>
+                                        <span class="fa fa-chevron-right"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Company Profile</span>
+                                        <span class="fa fa-chevron-right"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Apps & Integrations</span>
+                                        <span class="fa fa-chevron-right"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Accept Credit Cards</span>
+                                        <span class="fa fa-chevron-right"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Billing & Upgrade</span>
+                                        <span class="fa fa-chevron-right"></span>
+                                    </a>
+                                </li>
+                            </ul>
                     </div>
                 </div>
             </div>
@@ -104,14 +158,14 @@
 <script src="lib/popper.js/dist/umd/popper.min.js"></script>
 <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function () {
-        $('[data-toggle=offcanvas]').click(function () {
-            $('.row-offcanvas .sidebar-offcanvas').toggleClass('active');
-        });
-        $('.row-offcanvas > .sidebar-offcanvas > ul  a').click(function () {
-            $('.row-offcanvas .sidebar-offcanvas').toggleClass('active');
-        });
-    });
+	$(document).ready(function () {
+		$('[data-toggle=offcanvas]').click(function () {
+			$('.row-offcanvas').toggleClass('active');
+		});
+		$('.row-offcanvas > .sidebar-offcanvas > ul  a').click(function () {
+			$('.row-offcanvas').toggleClass('active');
+		});
+	});
 </script>
 </body>
 </html>

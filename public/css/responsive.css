@@ -26,6 +26,16 @@
   ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px){
+    .settings{
+        margin-left: 0 !important;
+        padding: 20px !important;
+    }
+    .settings > ul{
+        margin-left: 0 !important;
+    }
+    .color-box{
+        width: 33px !important;
+    }
     body{
         background-color: #fff !important;
     }

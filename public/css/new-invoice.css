@@ -1,0 +1,115 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+.outstanding-revenue{
+    background:url('../images/oustanding revenue.png') no-repeat;
+    background-size: 100% 100%;
+}
+.total-profit{
+    background:url('../images/graph placeholder.png') no-repeat;
+    background-size: 100% 100%;
+}
+.menu-close{
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+    top: 0;
+    right: 0;
+    border: none;
+}
+.menu-icon{
+    font-size: 25px;
+    margin: auto 10px !important;
+    color: #361c1b;
+}
+.hamburger-menu > span{
+    color: #FFC36E !important;
+}
+.input-custom{
+    height: 40px;
+}
+.form-group{
+    margin-bottom: 4px;
+}
+.control-group-title{
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.21;
+    color: #a0a0a0 !important;
+}
+.settings h6{
+    font-family: Open Sans, sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: left;
+    color: #000000 !important;
+}
+.settings h6 i {
+    color: #a0a0a0 !important;
+}
+.settings p{
+    font-family: Open Sans, sans-serif;
+    font-size: 10px;
+    line-height: 1.21;
+    text-align: left;
+    color: #a0a0a0 !important;
+}
+
+
+/*
+Invoice styles*/
+
+.invoice{
+    min-height: 100vh;
+    border: solid 2.5px #e0e0e0;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.invoice .first-child{
+    height: 130px;
+}
+.invoice .first-child .logo-container{
+    height: 100%;
+    border-radius: 5px;
+    border: 2px dashed #CCD3D9 !important;
+}
+.invoice .second-child{
+    height: 100px;
+}
+.invoice-header-color{
+    color: #995A52;
+    font-weight: 600;
+}
+.invoice .second-child .add-client-placeholder{
+    height: 100%;
+    width: 90%;
+    border-radius: 5px;
+    border: 2px dashed #CCD3D9 !important;
+}
+.invoice-divider{
+    height: 3px;
+    background-color: #854643;
+}
+.invoice .fourth-child{
+    min-height: 40px;
+}
+.invoice-inner{
+    flex: 1;
+}
+
+.btn-add-item{
+    border: 2px dashed #CCD3D9 !important;
+    opacity: 0.8;
+    background-color: #FFF !important;
+    font-size: 13px !important;
+}
+.btn-add-item:hover,
+.btn-add-item.active{
+    opacity: 1 !important;
+}
