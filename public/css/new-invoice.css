@@ -96,6 +96,12 @@ Invoice styles*/
     height: 3px;
     background-color: #854643;
 }
+.invoice  > .invoice-inner > .costing{
+    height: auto;
+}
+.invoice  > .invoice-inner > .costing table td{
+    text-align: right;
+}
 .invoice .fourth-child{
     min-height: 40px;
 }

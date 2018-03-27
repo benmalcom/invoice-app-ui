@@ -1,0 +1,171 @@
+.navbar{
+    background-color: #854643 !important;
+}
+.nav-right .try-it, .try-it-sm{
+    background-color: #ffc36e !important;
+    opacity: 0.9 !important;
+    border: 1px solid #ffc36e !important;
+    font-size: 12px !important;
+    border-radius: 2px !important;
+    font-weight: bold !important;
+}
+.navbar > .navbar-collapse > .navbar-nav > li > a.nav-link,
+.navbar > .navbar-collapse > .navbar-nav > a.login-link{
+    font-size: 13px !important;
+    font-family: Open Sans, sans-serif;
+    color: #e9ccc6 !important;
+}
+.navbar > .navbar-collapse > .navbar-nav > a.login-link{
+    color: #ffffff !important;
+}
+.navbar > .navbar-collapse > .right-nav > .try-it.active,
+.navbar > .navbar-collapse > .right-nav > .try-it:hover{
+    opacity: 1 !important;
+}
+.divider{
+    background-color: #f4f4f4;
+}
+.banner{
+    background-color: #854643;
+    padding: 0 !important;
+}
+.home-writings{
+    padding: 130px 0 !important;
+}
+.home-writings h6{
+    color: #ffc36e;
+}
+.home-writings h1{
+    line-height: 0.9em;
+}
+.home-writings .answer{
+    line-height: 1.3em !important;
+}
+.home-writings p{
+    font-size: 13px;
+    color: #edcac9;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+.freelancer,.small-business, .large-corporation{
+    height: calc(90vh - 40px);
+    min-height: calc(90vh - 40px);
+}
+.freelancer h1, .small-business h1, .large-corporation h1{
+    line-height: 1em;
+    font-weight: 500;
+}
+.freelancer p, .small-business p, .large-corporation p{
+    line-height: 1em;
+}
+
+.freelancer .hero{
+    background:url('../images/freelance-young-man-sitting-down-with-a-laptop.jpg') no-repeat 100% 100%;
+    background-size:cover;
+}
+.small-business .hero{
+    background:url('../images/small-business-owners-male-and-female.jpg') no-repeat 100% 100%;
+    background-size:cover;
+}
+.large-corporation .hero{
+    background:url('../images/startup-office.jpg') no-repeat 100% 100%;
+    background-size: cover !important;
+}
+.large-corporation .row{
+    background-color: #854643 !important;
+    color: #fff !important;
+}
+.large-corporation h6{
+    color: #edcac9;
+}
+.large-corporation p, .large-corporation small{
+    color: #edcac9;
+}
+.white-overlay{
+    position: absolute;
+    top: -10%;
+    left: 0;
+    right: 0;
+}
+.footer-logo{
+    height: 35px;
+}
+footer{
+    position: relative;
+    padding: 90px;
+    padding-bottom: 60px;
+}
+
+/*
+  ##Device = Most of the Smart phones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px){
+    .home-writings{
+        padding: 80px 0 !important;
+    }
+    .white-overlay{
+        margin: 25px auto;
+    }
+    .footer-inner{
+        margin-top: 70px !important;
+    }
+    .home-writings h1{
+        font-size: 20px !important;
+    }
+    .home-writings p{
+        font-size: 11px !important;
+    }
+    .home-writings, .freelancer, .small-business, .large-corporation{
+        padding: auto 10px !important;
+        min-height: auto !important;
+        margin-top: 0 !important;
+        text-align: center !important;
+    }
+    .freelancer h1, .small-business h1, .large-corporation h1{
+        font-size: 20px !important;
+    }
+    .freelancer p, .small-business p, .large-corporation p{
+        font-size: 9.5px !important;
+        line-height: 0.5em !important;
+    }
+
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+
+}

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
-body{
-    background:url('../images/setup bg.png') no-repeat;
+.auth-wrapper{
+    height: 100vh;
+    background:url('../images/setup bg.png') no-repeat 100% 100%;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
 }
@@ -18,3 +19,55 @@ body{
 .bottom-text p, .bottom-text p a{
     color: #edd0cb !important;
 }
+
+/*
+  ##Device = Most of the Smart phones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px){
+    .auth-wrapper{
+        height: auto !important;
+    }
+   .login-parent{
+       margin: 5px !important;
+   }
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+
+}
+

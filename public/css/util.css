@@ -739,7 +739,7 @@ Background colors*/
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
-    font-size: 12px !important;
+    font-size: 12px;
 }
 .btn-custom.btn-nav{padding: 6px 18px;}
 .btn-custom:hover,.btn-custom:active,
@@ -833,4 +833,7 @@ select.minimal {
 }
 .flex-grow{
     flex-grow: 1;
+}
+.grey-border-bottom{
+    border-bottom: 2px solid #777;
 }
