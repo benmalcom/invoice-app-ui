@@ -722,6 +722,13 @@ Background colors*/
 .circle{border-radius: 50%;}
 .circle-xs{height: 50px; width: 50px;}
 .circle-sm{height: 70px; width: 70px;}
+.circle-md{height: 65px; width: 65px;}
+.circle-text-content {
+    display:table-cell;
+    margin-top: 15%;
+    vertical-align:middle;
+    text-align:center;
+}
 .absolute-position{position: absolute !important;}
 .relative-position{position: relative !important;}
 
@@ -739,7 +746,7 @@ Background colors*/
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
-    font-size: 12px;
+    font-size: 11px;
 }
 .btn-custom.btn-nav{padding: 6px 18px;}
 .btn-custom:hover,.btn-custom:active,

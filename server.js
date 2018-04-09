@@ -9,7 +9,7 @@ const reloadServer = livereload.createServer({
 	exts: [ 'css', 'html' ],
 	// Print debug info
 	debug: false,
-	originalPath: 'localhost:4000'
+	originalPath: 'localhost:5000'
 });
 
 // Specify the folder to watch for file-changes.
@@ -26,7 +26,7 @@ app.get('/*', function(req, res) {
 
 
 const server = http.createServer(app);
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 5000);
 const port = app.get('port');
 server.listen(port, () => {
 	console.log(`Application listening on ${app.get('port')}`);
