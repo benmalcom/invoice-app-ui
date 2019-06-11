@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/global.css" media="screen">
+    <link rel="stylesheet" href="css/dashboard.css" media="screen">
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="overlay">
+    <div class="col-md-4 email-notif hidden">
+        <div class="col-md-12 col-12 email-notif-inner text-center">
+            <img class="email-image mt-80" src="images/email.png">
+            <div class="text-center mt-30 text-custom">
+                <h5 class="text-600">Hey, you're almost there!</h5>
+                <h5 class="text-600">Verify your email to get started.</h5>
+            </div>
+            <div class="text-center text-muted mt-10">
+                <p class="text-xs mb-0">Because we need to keep your financial information</p>
+                <p class="text-xs mt-0">safe and secure, an email has been sent to</p>
+            </div>
+            <div class="text-center mt-20">
+                <h6>benjamin@example.com</h6>
+            </div>
+            <div class="text-center text-muted mt-20">
+                <p class="text-xs mb-0">Didn't receive the email?</p>
+                <p class="text-xs mt-0"><span class="text-custom">Resend email</span> or <span class="text-custom">edit email</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 business-notif">
+        <div class="col-md-12 col-12 business-notif-inner text-center">
+            <img class="logo-image mt-80" src="images/logo.png">
+            <div class="mt-50">
+                <img class="business-image" src="images/business%20bag.png">
+            </div>
+            <div class="text-center mt-30 text-custom">
+                <h5 class="text-600">Welcome to an accounting</h5>
+                <h5 class="text-600">software crafted for you.</h5>
+            </div>
+            <div class="text-center mt-30">
+                <a class="btn btn-custom-app">Setup your business</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid blur">
+    <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-md-3 col-lg-2 sidebar sidebar-offcanvas p-0 m-0">
+            <!--<button type="button" class="m-1 d-block d-sm-none menu-close" data-toggle="offcanvas">
+                <i class="fa fa-times"></i>
+            </button>-->
+            <div class="user-avatar-area center-content">
+                <div>
+                    <img src="images/user%20avatar.png" class="circle circle-md pp-border shadow">
+                    <h6 class="text-sm mt-10 user-name text-center">Benjamin Ikeji</h6>
+                    <h6 class="text-center text-sm"><a href="#" class="view-profile">VIEW PROFILE</a></h6>
+                </div>
+            </div>
+            <div class="user-links-area">
+                <ul class="mt-15 p-0">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="invoices.html">Invoices</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-10 content-parent p-0 blur">
+            <nav class="navbar bg-white shadow">
+                <a class="navbar-brand d-none d-sm-block" href="#">
+                    <img src="images/logo.png" class="logo-main">
+                </a>
+                <div class="btn-group dropdown align-items-center justify-content-between">
+                    <a class="d-inline d-sm-none hamburger-menu home-menu" data-toggle="offcanvas">
+                        <span class="fa fa-bars menu-icon"></span>
+                    </a>
+                    <a class="d-inline d-md-none text-muted home-menu" href="#">
+                        <i class="fa fa-home menu-icon"></i>
+                    </a>
+                    <a class="d-inline d-md-none text-muted home-menu" href="#" role="button" id="dropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-plus menu-icon"></i>
+                    </a>
+                    <div class="dropdown-menu bg-white mt-10 shadow-lite" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">New Invoice</a>
+                        <a class="dropdown-item" href="#">New Client</a>
+                        <a class="dropdown-item" href="#">Invite</a>
+                    </div>
+                </div>
+                <a>
+                    <img src="images/user%20avatar.png" class="circle circle-xs pp-border shadow d-block d-sm-none">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                </div>
+            </nav>
+            <div class="content p-20 pl-50 pr-50">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12">
+                        <h2 class="text-muted">Dashboard</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12 text-right content-left-on-minimize d-none d-sm-block">
+                        <a class="btn btn-outline-secondary ml-auto text-sm">INVITE</a>
+                        <a class="btn btn-custom-app text-sm">CREATE</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mb-30">
+                    <!-- Small modal -->
+                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
+                         aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content col-md-10 mx-auto p-20 montserrat text-muted">
+                                <h3 class="text-center mb-0 open-sans">Customize your</h3>
+                                <h3 class="text-center open-sans">Company's branding</h3>
+                                <h6 class="text-muted text-uppercase text-sm mt-20">Company Logo</h6>
+                                <div class="h-80 border-dashed center-content">
+                                    <div class="text-center">
+                                        <h6><a href="#">Upload Logo</a></h6>
+                                        <h6 class="text-sm">Maximum file size 1MB</h6>
+                                    </div>
+                                </div>
+                                <h6 class="text-muted text-uppercase text-sm mt-20">Choose a theme colour</h6>
+                                <div class="container-fluid h-40">
+                                    <div class="row full-height">
+                                        <div class="color-box first"></div>
+                                        <div class="color-box second"></div>
+                                        <div class="color-box third"></div>
+                                        <div class="color-box fourth"></div>
+                                        <div class="color-box fifth"></div>
+                                        <div class="color-box sixth center-content text-white"><i
+                                                class="fa fa-chevron-down"></i></div>
+                                    </div>
+                                </div>
+                                <div class="mt-20">
+                                    <button class="btn btn-custom-app btn-block p-10">SAVE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                        <div class="b-r-custom bg-white business-setup">
+                            <h6 class="text-custom mt-20">Hello Benjamin,</h6>
+                            <h6 class="text-custom">Welcome to your account</h6>
+                            <p class="text-xs text-muted">Let's get you all setup and sending invoices right away. It
+                                will only take a minute.</p>
+                            <div class="row business-setup-inner mt-30">
+                                <div class="col-md-4 center-content mb-20">
+                                    <div class="text-center">
+                                        <p><img src="images/business.png" class="circle circle-sm"></p>
+                                        <p class="text-sm info-header"><strong>Setup Business Profile</strong></p>
+                                        <p class="text-muted text-xs mb-1">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut
+                                            labore et dolore magna aliqua eiusmod tempor incididunt.
+                                        </p>
+                                        <p><a class="btn btn-secondary text-white text-sm disabled">Completed</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 center-content mb-20">
+                                    <div class="text-center">
+                                        <p><img src="images/business%202.png" class="circle circle-sm"></p>
+                                        <p class="text-sm info-header"><strong>Customize Your Branding</strong></p>
+                                        <p class="text-muted text-xs mb-1">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut eiusmod tempor incididunt ut
+                                            labore et dolore magna aliqua.
+                                        </p>
+                                        <p><a class="btn btn-custom-app text-white pl-30 pr-30" data-toggle="modal"
+                                              data-target=".bd-example-modal-sm">Start</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 center-content mb-20">
+                                    <div class="text-center">
+                                        <p><img src="images/business.png" class="circle circle-sm"></p>
+                                        <p class="text-sm info-header"><strong>Send a Test Invoice</strong></p>
+                                        <p class="text-muted text-xs mb-1">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut
+                                            labore et dolore magna aliqua consectetur adipiscing elit.
+                                        </p>
+                                        <p><a class="btn btn-warning text-white text-sm">Send Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6 class="text-muted">Outstanding Revenue</h6>
+                        <div class="outstanding-revenue h-130 bg-white b-r-custom">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-30">
+                    <div class="col-md-12">
+                        <h6 class="text-muted">Total Profit</h6>
+                        <div class="total-profit h-400 bg-white b-r-custom">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/popper.js/dist/umd/popper.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('[data-toggle=offcanvas]').click(function () {
+			$('.row-offcanvas').toggleClass('active');
+		});
+		$('.row-offcanvas > .sidebar-offcanvas > ul  a').click(function () {
+			$('.row-offcanvas').toggleClass('active');
+		});
+	});
+</script>
+</body>
+</html>

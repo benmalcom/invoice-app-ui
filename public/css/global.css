@@ -1,7 +1,7 @@
 @import 'util.css';
 @import '../lib/bootstrap/dist/css/bootstrap.min.css';
 @import 'responsive.css';
-@import '../lib/font-awesome/css/font-awesome.min.css';
+@import '../lib/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
 body{
@@ -152,7 +152,7 @@ ul{
     overflow-y: auto;
 }
 .content-title{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400 !important;
 }
 .menu-close{

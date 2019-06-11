@@ -570,6 +570,27 @@ Background colors*/
     color: white !important;
 }
 
+.text-400{
+    font-weight: 400;
+}
+.text-500{
+     font-weight: 500;
+}
+.text-600{
+    font-weight: 600;
+}
+.text-700{
+    font-weight: 700;
+}
+.text-800{
+    font-weight: 800;
+}
+
+.text-900{
+    font-weight: 900;
+}
+
+
 .text-xxs {
     font-size: 9px !important;
 }
@@ -722,7 +743,7 @@ Background colors*/
 .circle{border-radius: 50%;}
 .circle-xs{height: 50px; width: 50px;}
 .circle-sm{height: 70px; width: 70px;}
-.circle-md{height: 65px; width: 65px;}
+.circle-md{height: 90px; width: 90px;}
 .circle-text-content {
     display:table-cell;
     margin-top: 15%;
@@ -739,7 +760,6 @@ Background colors*/
 .btn-custom-app{
     background-color: #864642 !important;
     color: #fff !important;
-    opacity: 0.9;
     border: 1px solid #864642 !important;
     outline: none;
     border-radius: 2px !important;
@@ -751,7 +771,7 @@ Background colors*/
 .btn-custom.btn-nav{padding: 6px 18px;}
 .btn-custom:hover,.btn-custom:active,
 .btn-custom-success:hover,.btn-custom-success:active,
-.btn-custom2:hover,.btn-custom2:active {opacity: 1; font-weight: bolder;}
+.btn-custom2:hover,.btn-custom2:active {opacity: 0.8}
 .input-custom{
     font-family: 'Open Sans', sans-serif;
     color: #999 !important;
@@ -843,4 +863,7 @@ select.minimal {
 }
 .grey-border-bottom{
     border-bottom: 2px solid #777;
+}
+.hidden{
+    display: none;
 }
